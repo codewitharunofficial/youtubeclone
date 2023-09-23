@@ -6,13 +6,13 @@ import {Navbar, Feed, SearchFeed, VideoDetails, ChannelDetails} from './Componen
 
 function App() {
   return (
-    <Box sx={{backgroundColor: '#000'}} >
+    <Box sx={{backgroundColor: '#fff'}} >
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Feed />} />
         <Route path='/video/:id' exact element={<VideoDetails />} />
         <Route path='/channel/:id' exact element={<ChannelDetails />} />
-        <Route path='/search' exact element={<SearchFeed />} />
+        <Route path='/search/:searchTerm' exact element={<SearchFeed />} />
       </Routes>
 
     </Box>
